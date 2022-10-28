@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     private static final int REQUEST_CAMERA_CODE = 300;
     private static final int REQUEST_PERMISSION_CODE = 200;
     @Override
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -216,8 +215,8 @@ public class MainActivity extends AppCompatActivity {
 
             try {
                 // this URI comes from the API itself and can be modified to change what is requested
-                URIBuilder builder = new URIBuilder("https://canadacentral.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=true&returnFaceLandmarks=false&returnFaceAttributes=emotion,age,gender,headPose,smile,facialHair,glasses,hair,makeup&recognitionModel=recognition_01&returnRecognitionModel=false&detectionModel=detection_01");
-
+                URIBuilder builder = new URIBuilder("https://canadacentral.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=false&returnFaceLandmarks=false&returnFaceAttributes=emotion,age,gender,headPose,smile,facialHair,glasses,hair,makeup&recognitionModel=recognition_01&returnRecognitionModel=false&detectionModel=detection_01");
+                //URIBuilder builder = new URIBuilder("https://canadacentral.api.cognitive.microsoft.com/face/v1.0/detect?returnFaceId=true&returnFaceLandmarks=false&returnFaceAttributes=emotion,age,gender,headPose,smile,facialHair,glasses,hair,makeup&recognitionModel=recognition_01&returnRecognitionModel=false&detectionModel=detection_01\n");
                 URI uri = builder.build();
                 // make a new POST request since we need to send our image to the API server
                 HttpPost request = new HttpPost(uri);
@@ -231,9 +230,10 @@ public class MainActivity extends AppCompatActivity {
 
                 // getting a response and assigning it to the string res
                 ClassicHttpResponse response = (ClassicHttpResponse) httpclient.execute(request);
+                Log.i("doInBackground", response.toString());
                 HttpEntity entity = response.getEntity();
                 String res = EntityUtils.toString(entity);
-
+                Log.i("doInBackground",res);
                 return res;
 
             }

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Shared Preference Demo</string>
+    <string name="shared_preference">Shared Preference</string>
+    <string name="save">Save</string>
+    <string name="demo">Demo</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="load">Load</string>
+</resources>

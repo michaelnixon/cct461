@@ -3,20 +3,22 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity  {
-
+    private TextView resultText;
+    private int answer=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        resultText = findViewById(R.id.resultTextView);
         //Declaring an array
         int[] ourArray;
 
-        //Allocate memory for a maximum size of 5 elements
-        ourArray = new int[5];
+        //Allocate memory for a maximum size of 6 elements
+        ourArray = new int[6];
 
         //Initialize ourArray with values
         //The values are arbitrary as long as they are int
@@ -27,7 +29,7 @@ public class MainActivity extends AppCompatActivity  {
         ourArray[2] = 125;
         ourArray[3] = 68;
         ourArray[4] = 47;
-
+        ourArray[5] = 200;
 
         //Output all the stored values
         Log.i("info", "Here is ourArray:");
@@ -40,21 +42,21 @@ public class MainActivity extends AppCompatActivity  {
         //We can do any calculation with an array element
         //As long as it is appropriate to the contained type
         //Like this:
-        int answer = ourArray[0] +
-                ourArray[1] +
-                ourArray[2] +
-                ourArray[3] +
-                ourArray[4];
+        for (int j : ourArray) {
+            answer = answer + j;
+        }
 
-        Log.i("info", "Answer = "+answer);
+        //Log.i("info", "Answer = "+answer);
     }
 
     /**
      * click handler for calculate button
      */
-    protected void calculateAndShowResult(View view) {
+    public void calculateAndShowResult(View view) {
         // get result from answer then put in the textView here
         // what needs to change in onCreate so that's possible?
+        //Log.i("info", "Answer = "+answer);
+        resultText.setText(String.valueOf(answer));
 
     }
 
