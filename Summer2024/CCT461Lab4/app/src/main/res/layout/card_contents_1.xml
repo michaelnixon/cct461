@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/learning_java_by_building_android_games"
+        android:text="@string/learning_java_by_building_android_games_title"
+        android:textSize="24sp"
+        tools:text="Learning Java by Building Android Games" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:contentDescription="@string/cover_for_java_by_building_android_games"
+        app:srcCompat="@drawable/image_1" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:text="@string/learn_java_and_android_from_scratch_by_building_6_playable_games"
+        android:textSize="16sp"
+        tools:text="Learn Java and Android from scratch by building 6 playable games" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:onClick="loadCard1More"
+        android:text="@string/BUYNOW"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        tools:text="BUY NOW" />
+</android.widget.LinearLayout>

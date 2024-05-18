@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab3-4-demo</string>
+    <string name="textview">TextView</string>
+    <string name="cover_for_java_by_building_android_games">Cover for Java by Building Android Games</string>
+    <string name="todo">TODO</string>
+    <string name="detailedDescription">TextView</string>
+    <string name="BUYNOW">BUY NOW</string>
+    <string name="learning_java_by_building_android_games">Learning Java by Building Android Games</string>
+    <string name="learn_java_and_android_from_scratch_by_building_6_playable_games">Learn Java and Android from scratch by building 6 playable games</string>
+    <string name="learning_java_by_building_android_games_title">Learning Java by Building Android Games</string>
+    <string name="beginning_c_game_progamming">Beginning C++ Game Programming</string>
+    <string name="learn_c_game_programming_from_scratch">Learn C++ game programming from scratch</string>
+    <string name="full_description">Lorem Ipsum</string>
+    <string name="cover_of_book">cover of book</string>
+    <string name="return_to_main">Return to Main</string>
+</resources>
