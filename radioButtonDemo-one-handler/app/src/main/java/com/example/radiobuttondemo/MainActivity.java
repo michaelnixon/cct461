@@ -40,7 +40,6 @@ public class MainActivity extends AppCompatActivity {
         RadioGroup radioGroup =
                 findViewById(R.id.radioGroup);
 
-
         final EditText editText =
                 findViewById(R.id.editText);
 

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Simple Array Demo</string>
+    <string name="result_goes_here">Result goes here</string>
+    <string name="calculate">Calculate</string>
+</resources>
